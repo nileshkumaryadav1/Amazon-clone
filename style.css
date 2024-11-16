@@ -1,9 +1,12 @@
+/* .....Universal ......... */
+
 *{
     margin: 0;
     font-family: arial;
     border: border-box;
 }
 
+/* ......nav style.......... */
 .navbar{
     height: 60px;
     background-color: #0f1111;
@@ -53,7 +56,7 @@
     cursor: pointer;
 }
 
-/* box 3 */
+/*..................... box 3................... */
 .navsearch{
     display: flex;
     justify-content: space-evenly;
@@ -88,7 +91,7 @@
     cursor: pointer;
 }
 
-/* box 4 n 5*/
+/*................... box 4 n 5............................*/
 
 span{
     font-size: 0.7rem;
@@ -100,7 +103,7 @@ span{
     font-weight: 700;
 }
 
-/* last box 6*/
+/* .........................last box 6................*/
 .navcart{
     display: flex;
     align-items: center;
@@ -115,7 +118,7 @@ span{
     font-size: 0.9rem;
 }
 
-/* panal style */
+/* .............................panal style.................... */
 
 .panal{
     height: 40px;
@@ -196,7 +199,7 @@ span{
     font-size: 0.87rem;
 }
 
-/* shop section */
+/* ..........................shop section ..................*/
 
 .shopsection{
     display: flex;
@@ -224,7 +227,7 @@ span{
     margin-right: 1rem;
 }
 
-/* footer */
+/*....................... footer ........................*/
 
 .footer{
     margin-top: 10px;
@@ -239,12 +242,17 @@ span{
     align-items: center;
     font-size: 0.85rem;
 }
-.btt{
-    cursor: pointer;
-    font-size: 20px;
+.footpanel1 a{
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-size: medium;
 }
-.btt:hover{
-    box-shadow: 2px 2px 2px black;
+.footpanel1 a:hover{
+    box-shadow: 1px 1px 50px 1px black;
+    text-decoration: none;
 }
 
 .footpanel2{
@@ -269,7 +277,6 @@ ul a {
 a:hover{
     text-decoration: underline;
 }
-
 
 .footpanel3{
     height: 100px;
@@ -324,7 +331,386 @@ a:hover{
 color: rgb(167, 167, 252);
 }
 
-
 .copyright{
     padding: 5px;
 }
+
+/* .................................................................................................................mobile browser style......................................................................... */
+
+@media screen and (max-width: 400px) {
+
+    header{
+        background-color: #0f1111;
+    }
+
+    .navbar{
+        width: 100vw;
+        height: max-content;
+        background-color: #0f1111;
+        color: white;
+        display: block;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #navlogo{
+        height: auto;
+        width: 50vw;
+        cursor: pointer;
+        display: inline;
+        float: left;
+    }
+    .logo{
+        background-image: url("amznlogo.png");
+        background-size: cover;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .border{
+        border: 1.5px solid transparent;
+        cursor: pointer;
+    }
+    
+    .border:hover{
+        border: 1.5px solid white;
+    }
+
+    .navaddress{
+        width: 30vw;
+        height: max-content;
+        display: inline;
+        float: right;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+    }
+    
+    .addfirst{
+      color: #cccccc;
+      font-size: 0.85rem;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    
+    .addsecond{
+        font-size: 1rem;
+    }
+    
+    .addicon{
+        display: flex;
+        align-content: center;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+    
+    .navsearch{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: pink;
+        width: 90vw;
+        height: 35px;
+        border-radius: 3px;
+        margin: 2px 10px 2px 10px;
+    }
+    
+    .navsearch:hover{
+        border: 2px solid orange;
+    }
+    .searchselect{
+        width: 50px;
+    }
+    .searchinput{
+        width: 100vw;
+     font-size: 1rem;
+     border: none;
+    }
+    
+    .searchicon{
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        padding: 5px;
+        background-color: rgb(255, 173, 50);
+        border-radius: 3px;
+        color: #0f1111;
+        cursor: pointer;
+    }
+    
+    .navsignin{
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .navreturn{
+       float: right;
+       margin-right: 25px;
+    }   
+    
+    .navcart{
+        display: inline-block;
+        margin: 2px 0px 1px 30px;
+        float: none;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    span{
+        font-size: 0.7rem;
+    }
+    
+    .navsecond{
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    #cart{
+        font-size: 0px;
+    }
+    
+    #cartword{
+        font-size: 0px;
+    }
+    
+    /* ......................nav panal style....................... */
+    
+    .panal{
+        width: 100vw;
+        height: max-content;
+        background-color: #222f3d;
+        display: inline-block;
+        color: white;
+        justify-content: space-evenly;
+        padding:5px 0px 5px 0px;
+    }
+
+    .panalall{
+        width: 10vw;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 5px 2px 1px 5px;
+        float: left;
+        font-size: larger;
+    }
+    
+    .panaloption{
+        display: inline;
+        align-items: center;
+        width: 72vw;
+        font-size: 0.85rem;  
+        float: right;
+    }
+    
+    .panaloptionlink{
+        margin-right: 10px;
+        cursor: pointer;
+        display: inline;
+    }
+
+    .madebynilesh{
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .madebynilesh1{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        font-size: 0;
+    }
+    
+    .madebynilesh1:hover{
+        text-decoration: underline;
+        color: rgb(201, 201, 255);
+    }
+    
+    /* ........main hero img style...... */
+    .herosection{
+        background-image: url("hero.jpg");
+        width: 100vw;
+        height:18vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .heromsg{
+        background-image: url("heroimgsmall.jpg");
+        background-size: cover;
+        color: white;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+        margin-bottom: 10px;
+        font-size: 0rem;
+    }
+    
+    .linkofamazonindia{
+        text-decoration: none;
+        color: #007185;
+        font-size: 0rem;
+    }
+    .linkofamazonindia:hover{
+        text-decoration: underline;
+        font-size: 0rem;
+    }
+    
+    /* ..................shop section.................. */
+    
+    .shopsection{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #e2e7e6;
+    }
+    .box{
+        height: max-content;
+        width: 100vw;
+        background-color: white;
+        padding: 20px 0px 15px;
+        margin-top: 0.2rem;
+    }
+    
+    .boximg{
+        height: 300px;
+        background-size: cover; 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .boxcontent{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    /* ................footer ...........................*/
+    
+    .footer{
+        margin-top: 2px;
+    }
+    
+    .footpanel1{
+        background-color: #37475a;
+        color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85rem;
+    }
+    .footpanel1 a{
+        color: white;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 5px;
+        border: 2px solid grey;
+        font-size: medium;
+    }
+    .footpanel1 a:hover{
+        box-shadow: 1px 1px 50px 1px black;
+        text-decoration: none;
+    }
+    .footpanel2{
+        background-color: #222f3d;
+        color: white;
+        height: max-content;
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    ul{
+        margin-top: 1px;
+        padding: 10px 20px 10px 25px;
+    }
+    
+    ul a {
+        display: block;
+        font-size: 0.85rem;
+        margin-top: 10px;
+        color: #dddddd;
+        cursor: pointer;
+        display: inline;
+        padding: 4px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    .footpanel3{
+        height: 100px;
+        border-top: 0.5px solid rgb(99, 97, 97);
+        background-color: #222f3d;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logofoot{
+        background-image: url("amznlogo.png");
+        background-size: cover;
+        height: 50px;
+        width: 100px;
+        margin-left: 30vw;
+        cursor: pointer;
+    }
+    
+    .btnfoot{
+        padding: 5px;
+        margin: 4px;
+        border-radius: 4px;
+        border: 1px solid rgb(99, 97, 97);
+        background-color: transparent;
+        color: white;
+        width: 120px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+    }
+    .btnfoot:hover{
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .onebtn{
+        margin-left: 10vw;
+    }
+    
+    .footpanel4{
+        background-color: #0f1111;
+        color: #dddddd;
+        height: max-content;  
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .footpageoption{
+        padding-top: 20px;
+    }
+    
+    .footlinkoption{
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    .footlinkoption:hover{
+    color: rgb(167, 167, 252);
+    }
+    
+    .copyright{
+        padding: 10px 10px 15px 10px;
+    }
+
+    /* ............foot style end................. */
+}
+
+/* ............mobile style end........................................................................................................................... */
+
